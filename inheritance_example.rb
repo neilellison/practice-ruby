@@ -20,19 +20,24 @@ end
 
 
 class Car < Vehicle
-  
+  def fuel
+    puts "standard"
+  end
+    
   def honk_horn
     puts "Beeeeeeep!"
   end
 end
 
-class Bike < Car
+class Bike < Vehicle
 
   def ring_bell
     puts "Ring ring!"
   end
 end
 
-car = Car.new({speed: 0, direction: "north"})
-bike = Bike.new({speed: 0, direction: "north"})
+bike = Bike.new
+car = Car.new
+
 bike.ring_bell
+car.honk_horn
