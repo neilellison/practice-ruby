@@ -23,14 +23,17 @@ class Car < Vehicle
   def fuel
     puts "standard"
   end
-    
+
   def honk_horn
     puts "Beeeeeeep!"
   end
 end
 
 class Bike < Vehicle
-
+  
+  def type
+    puts "Huffy"
+  end   
   def ring_bell
     puts "Ring ring!"
   end
